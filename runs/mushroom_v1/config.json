@@ -1,0 +1,13 @@
+{
+  "temperature": 0.6573988199234009,
+  "tau_edible": 0.95,
+  "tau_poison": 0.7,
+  "class_names": [
+    "edible",
+    "poisonous"
+  ],
+  "img_size": [
+    224,
+    224
+  ]
+}

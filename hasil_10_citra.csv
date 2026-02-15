@@ -1,0 +1,11 @@
+No,Nama Citra,Path,Prob Edible,Prob Poisonous,Keputusan Model,Keputusan Safety-first,Latency ms
+1,Psilocybe_semilanceata_000010_1.jpg,C:\mushroom\sample_10\Psilocybe_semilanceata_000010_1.jpg,0.0012,0.9988,POISONOUS,POISONOUS - JANGAN KONSUMSI,19.82
+2,Rhodophyllus_rhodopolius_000001_0.jpg,C:\mushroom\sample_10\Rhodophyllus_rhodopolius_000001_0.jpg,0.3473,0.6527,POISONOUS,ABSTAIN - Perlu verifikasi,17.62
+3,Russula_emetica_000001_1.jpg,C:\mushroom\sample_10\Russula_emetica_000001_1.jpg,0.033,0.967,POISONOUS,POISONOUS - JANGAN KONSUMSI,18.19
+4,Russula_emetica_000028_1.jpg,C:\mushroom\sample_10\Russula_emetica_000028_1.jpg,0.0029,0.9971,POISONOUS,POISONOUS - JANGAN KONSUMSI,18.12
+5,Scleroderma_citrinum_000001_1.jpg,C:\mushroom\sample_10\Scleroderma_citrinum_000001_1.jpg,0.0482,0.9518,POISONOUS,POISONOUS - JANGAN KONSUMSI,15.18
+6,Suillus_luteus_000021_0.jpg,C:\mushroom\sample_10\Suillus_luteus_000021_0.jpg,0.8707,0.1293,EDIBLE,ABSTAIN - Perlu verifikasi,16.76
+7,Tricholoma_matsutake_000012_0.png,C:\mushroom\sample_10\Tricholoma_matsutake_000012_0.png,0.7688,0.2312,EDIBLE,ABSTAIN - Perlu verifikasi,14.99
+8,Truffles_000010_0.jpg,C:\mushroom\sample_10\Truffles_000010_0.jpg,0.9999,0.0001,EDIBLE,EDIBLE? (baca peringatan),15.4
+9,Tuber_melanosporum_000003_1.jpg,C:\mushroom\sample_10\Tuber_melanosporum_000003_1.jpg,0.9996,0.0004,EDIBLE,EDIBLE? (baca peringatan),14.36
+10,Tuber_melanosporum_000010_1.jpg,C:\mushroom\sample_10\Tuber_melanosporum_000010_1.jpg,1.0,0.0,EDIBLE,EDIBLE? (baca peringatan),14.55

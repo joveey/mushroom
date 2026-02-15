@@ -1,0 +1,40 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Train (Kaggle train/val/test)",
+      "type": "python",
+      "request": "launch",
+      "program": "${workspaceFolder}/train_local.py",
+      "console": "integratedTerminal",
+      "args": [
+        "--data_root", "C:\\Users\\Jovi\\Downloads\\splitted_dataset",
+        "--out_dir", "runs\\mushroom_v1",
+        "--epochs1", "5",
+        "--epochs2", "5"
+      ]
+    },
+    {
+      "name": "Evaluate (VAL+TEST)",
+      "type": "python",
+      "request": "launch",
+      "program": "${workspaceFolder}/evaluate.py",
+      "console": "integratedTerminal",
+      "args": [
+        "--run_dir", "runs\\mushroom_v1",
+        "--data_root", "C:\\Users\\Jovi\\Downloads\\splitted_dataset"
+      ]
+    },
+    {
+      "name": "Test TFLite (pick one image)",
+      "type": "python",
+      "request": "launch",
+      "program": "${workspaceFolder}/test_tflite.py",
+      "console": "integratedTerminal",
+      "args": [
+        "--run_dir", "runs\\mushroom_v1",
+        "--image", "C:\\Users\\Jovi\\Downloads\\splitted_dataset\\test\\poisonous\\SAMPLE.jpg"
+      ]
+    }
+  ]
+}
