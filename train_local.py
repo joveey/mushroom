@@ -144,7 +144,7 @@ def quick_eval(saved_model_dir: Path, ds, title: str):
     infer = model.signatures.get("serving_default")
     total, correct = 0, 0
     for xb, yb in ds:
-        out = infer(input_image=xb)["softmax_calibrated"].numpy()
+        out = list(infer(input_image=xb).values())[0].numpy()
         pred = out.argmax(1); y = yb.numpy()
         total += len(y); correct += (pred == y).sum()
     acc = correct / max(total, 1)
@@ -192,6 +192,13 @@ def main():
 
     # Probability models
     _, prob_calib = build_prob_models(model_logits, T_calib, img_size=(args.img_size,args.img_size))
+
+    # ===============================
+    # SAVE KERAS MODEL (FOR ANALYSIS ONLY)
+    # ===============================
+    keras_analysis_dir = out_dir / "keras_model_for_analysis"
+    model_logits.save(keras_analysis_dir)
+    print("Saved Keras model for analysis at:", keras_analysis_dir)
 
     # Save labels & config (threshold safety-first)
     (out_dir / "labels.txt").write_text("\n".join(class_names), encoding="utf-8")

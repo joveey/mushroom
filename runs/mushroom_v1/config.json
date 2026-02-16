@@ -1,7 +1,7 @@
 {
-  "temperature": 0.6573988199234009,
-  "tau_edible": 0.95,
-  "tau_poison": 0.7,
+  "temperature": 0.6646159291267395,
+  "tau_edible": 0.9,
+  "tau_poison": 0.6,
   "class_names": [
     "edible",
     "poisonous"
